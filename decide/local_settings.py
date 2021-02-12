@@ -26,13 +26,14 @@ APIS = {
 }
 
 BASEURL = 'http://10.5.0.1:8000'
-
+#Modificaciones para que arranque según la base de datos local que tengo.
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'HOST': 'db',
+        'NAME': 'decidedb1',
+        'USER': 'decidedb',
+        'PASSWORD': 'decidedb',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
